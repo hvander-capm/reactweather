@@ -2,6 +2,7 @@ import "./weather.css";
 import Temperature from "./Temperature";
 import Humidity from "./Humidity";
 import Wind from "./Wind";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function App() {
   return (
@@ -57,7 +58,7 @@ export default function App() {
             </div>
           </div>
           <br />
-          <a href="https://github.com/hvander-capm/my-weather-project">
+          <a href="https://github.com/hvander-capm/reactweather">
             Open Source Code by Heather Vanderberg
           </a>
         </div>
