@@ -2,7 +2,6 @@ import "./weather.css";
 import Temperature from "./Temperature";
 import Humidity from "./Humidity";
 import Wind from "./Wind";
-import bootstrap from `bootstrap`;
 
 export default function App() {
   return (
