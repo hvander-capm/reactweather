@@ -25,7 +25,6 @@
 }
 .btn {
   display: block;
-  background-color: #ffff;
   cursor: pointer;
   transition: 250ms ease-in;
   width: 150px;
