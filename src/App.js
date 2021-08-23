@@ -1,5 +1,5 @@
 import "./weather.css";
-import Temperature from "./Temperature";
+import Temperature from "./WeatherTemperature";
 import Humidity from "./Humidity";
 import Wind from "./Wind";
 import "bootstrap/dist/css/bootstrap.min.css";
