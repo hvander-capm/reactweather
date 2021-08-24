@@ -33,7 +33,7 @@ export default function Weather(props) {
 
   function search() {
     const apiKey = "ab981aa80d2e4a4a97fc25e69e3949d5";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(handleResponse);
   }
 
@@ -51,7 +51,7 @@ export default function Weather(props) {
                 onChange={handleCityChange}
               />
             </div>
-            <div className="col-3">
+            <div className="col-3 btn">
               <input
                 type="submit"
                 value="Search"
