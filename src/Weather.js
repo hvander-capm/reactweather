@@ -1,9 +1,8 @@
 import React, { useState } from "react";
+import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
-import ".weather.css";
-import Temperature from "./WeatherTemperature";
-import Humidity from "./Humidity";
-import Wind from "./Wind";
+import "./Weather.css";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -34,8 +33,7 @@ export default function Weather(props) {
 
   function search() {
     const apiKey = "ab981aa80d2e4a4a97fc25e69e3949d5";
-    let city = "London";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
 

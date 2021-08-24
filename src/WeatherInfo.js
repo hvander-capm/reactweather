@@ -21,14 +21,14 @@ export default function WeatherInfo(props) {
             </div>
 
             <div className="float-left">
-              <WeatherTemperature fahrenheit={props.data.temperature} />
+              <WeatherTemperature celsius={props.data.temperature} />
             </div>
           </div>
         </div>
         <div className="col-6">
           <ul>
             <li>Humidity: {props.data.humidity}%</li>
-            <li>Wind: {props.data.wind} Mph</li>
+            <li>Wind: {props.data.wind} km/h</li>
           </ul>
         </div>
       </div>
